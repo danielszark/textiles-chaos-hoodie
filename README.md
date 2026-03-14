@@ -101,13 +101,13 @@ Finally, gather all of your components and tools and select a hoodie OR shirt if
 ## Construction Guide
 ### Step 1 - Attach the FLORA and 1st NeoPixel:
 <p align="center">
-    <img src="images/img1.jpg" width="50%">
-    <img src="images/img5.jpg" width="50%">
+    <img src="images/img1.jpg" width="49%">
+    <img src="images/img5.jpg" width="49%">
 </p>
 
 To get our FLORA attached to the hoodie, begin by running the power from the VBATT pin to the + pin on the first NeoPixel. We will use one conductive thread line to connect the power to all of the NeoPixels, this means that you should **NOT** cut the conductive thread until you tie it off on the last NeoPixel in the chain. Do not worry about tying off the connection on the FLORA until all of the NeoPixels are attached. Finally, make sure the arrow on the NeoPixel is pointing towards where the next one will be attached and not the FLORA.
 
-[Neopixel arrow pointing](images/img12.jpg)
+![Neopixel arrow pointing](images/img12.jpg)
 
 ### Step 2 - Continue running the power to the rest of the NeoPixels:
 ### Step 3:
