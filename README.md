@@ -82,6 +82,22 @@ There is some important information you have to know before construction begins 
 Source: <a href="https://learn.adafruit.com/getting-started-with-flora/flora-pinout-diagram">Adafruit FLORA Pinout Diagram</a>
 </p>
 
+The FLORA contains several types of pins that serve different purposes:
+- **Digital pins** are used to control components such as the LEDs and the buzzer, they also read in the state of the tilt sensor.
+- **Analog pins** are used to read variable sensor values, which in our case are provided by the light sensor.
+- Some pins also support **PWM (Pulse Width Modulation)** which allows use to control the brightness of the Lilypad sewable LEDs.
+
+For this project every component will need a connection to ground as well as a connection to specific types of pins for power and signal:
+- The **light sensor** will be connected to analog pin **A10** and will get its power from one of the **3.3V** pins.
+- The **tilt sensor** will be connected to digital pin **D3** and does not need an extra power connection.
+- The **NeoPixels** will be connected to digital pin **D12** and will get their power from the **VBATT** pin.
+- The **Lilypad sewable LEDs** will be connected to digital pin **D9** which was **PWM** capability and will get their power from one of the **3.3V** pins.
+- The **Lilypad buzzer** will be connected to digital pin **D1** and does not need an extra power connection.
+
+If you follow the construction guide step by step you won't have to worry about the layout of the components, but if you want to be more freeform please keep in mind what types of pins each component needs its signal and power from. Also keep in mind that ground pins can be shared between components.
+
+Finally, gather all of your components and tools and select a hoodie OR shirt if you'd like to become your CHAOS Hoodie (or shirt).
+
 ## Construction Guide
 ## Reviewing the Code
 ## Troubleshooting
