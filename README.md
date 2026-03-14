@@ -160,6 +160,19 @@ When running the ground, make sure that you keep it spaced away from the signal 
     <img src="images/img25.jpg" width="49%">
     <img src="images/img26.jpg" width="49%">
 </p>
+
+The process for running the ground is largely similar to that of the NeoPixels. The ground will run from the same ground pin that the NeoPixels use. Make sure you keep your stitches neat and that you're looping through the ground pin on the LEDs themselves as shown in one of the images above.
+### Step 11 - Run power for the Lilypad sewable LEDs:
+<p align="center">
+    <img src="images/img27.jpg" width="49%">
+    <img src="images/img28.jpg" width="49%">
+</p>
+<p align="center">
+    <img src="images/img29.jpg" width="49%">
+    <img src="images/img30.jpg" width="49%">
+</p>
+
+Finally, run the power for the sewable LEDs, making sure not to cross the power line over or under the ground line to avoid a short circuit. Once the power is run for the sewable LEDs, the construction phase of the project is complete!
 ## Reviewing the Code
 ## Troubleshooting
 ## Conclusion
