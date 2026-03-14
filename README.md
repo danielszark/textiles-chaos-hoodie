@@ -99,6 +99,19 @@ If you follow the construction guide step by step you won't have to worry about 
 Finally, gather all of your components and tools and select a hoodie OR shirt if you'd like to become your CHAOS Hoodie (or shirt).
 
 ## Construction Guide
+### Step 1 - Attach the FLORA and 1st NeoPixel:
+<p align="center">
+    <img src="images/img1.jpg>" width="45%">
+    <img src="images/img5.jpg>" width="45%">
+</p>
+
+### Step 2:
+### Step 3:
+### Step 4:
+### Step 5:
+### Step 6:
+### Step 7:
+### Step 8:
 ## Reviewing the Code
 ## Troubleshooting
 ## Conclusion
