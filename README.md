@@ -38,7 +38,7 @@ Below is a list of tools that will be used for this project:
 Below is a list of all the materials used in the construction of the project.
 
 | Component | Quantity | Estimated Cost | Link |
-|:---------:|:--------:|:-------------:|:----:|
+|:---------:|:--------:|:--------------:|:----:|
 | Adafruit FLORA microcontroller | 1 | $14.95 | https://www.adafruit.com/product/659 |
 | NeoPixels | 4 | $6.50 | https://www.adafruit.com/product/1260 |
 | LilyPad light sensor | 1 | $5.25 | https://www.sparkfun.com/lilypad-light-sensor.html |
