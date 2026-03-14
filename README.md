@@ -101,8 +101,8 @@ Finally, gather all of your components and tools and select a hoodie OR shirt if
 ## Construction Guide
 ### Step 1 - Attach the FLORA and 1st NeoPixel:
 <p align="center">
-    <img src="images/img1.jpg>" width="45%">
-    <img src="images/img5.jpg>" width="45%">
+    <img src="images/img1.jpg" width="45%">
+    <img src="images/img5.jpg" width="45%">
 </p>
 
 ### Step 2:
