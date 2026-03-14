@@ -109,7 +109,7 @@ Shown here is the final layout of all of the components. Im showing you this fir
     <img src="images/img5.jpg" width="49%">
 </p>
 
-To get our FLORA attached to the hoodie, begin by running the power from the VBATT pin to the + pin on the first NeoPixel. We will use one conductive thread line to connect the power to all of the NeoPixels, this means that you should **NOT** cut the conductive thread until you tie it off on the last NeoPixel in the chain. Do not worry about tying off the connection on the FLORA until all of the NeoPixels are attached. Finally, make sure the arrow on the NeoPixel is pointing towards where the next one will be attached and not the FLORA.
+To get our FLORA attached to the hoodie, first make sure that the ground pin between pins #6 and #9 is facing down then begin by running the power from the VBATT pin to the + pin on the first NeoPixel. We will use one conductive thread line to connect the power to all of the NeoPixels, this means that you should **NOT** cut the conductive thread until you tie it off on the last NeoPixel in the chain. Do not worry about tying off the connection on the FLORA until all of the NeoPixels are attached. Finally, make sure the arrow on the NeoPixel is pointing towards where the next one will be attached and not the FLORA.
 
 ![Neopixel arrow pointing](images/img12.jpg)
 
@@ -132,10 +132,25 @@ Running the ground is pretty much the exact same process as running the power, m
 ### Step 6 - Run the rest of the signal jumpers for the NeoPixels:
 ![All three lines complete for the NeoPixels](images/img16.jpg)
 
-This process is a little different as instead you will be making three shorter runs for the signal jumpers between all 4 NeoPixels.
-### Step 7:
-### Step 8:
-### Step 9:
+This process is a little different as instead you will be making three shorter runs for the signal jumpers between all 4 NeoPixels. Make sure you don't accidentally cross your conductive thread over the power or ground lines. If you keep your stiches neat and short you should have no problem avoiding the power and ground lines.
+### Step 7 - Run signal and ground for the buzzer:
+<p align="center">
+    <img src="images/img17.jpg" width="49%">
+    <img src="images/img18.jpg" width="49%">
+</p>
+
+Next you will want to attach the buzzer to the hoodie. The buzzer should be oriented in a way that the ground is facing left and the signal or positive side if facing right. You should get your ground line from the ground pin directly next to the battery plug in on the board. Your power or signal should come from the TX pin which is directly next to the ground pin. Sow your lines for the buzzer being usre not to cross them in order avoid short circuits.
+
+### Step 8 - Run signal and power for the light sensor:
+![Signal and power ran for the light sensor](images/img19.jpg)
+
+The signal for the light sensor will come from pin #10 on the FLORA while the power will come from the 3.3V pin situated between the SDA and RX pins. When you are sowing these connections in, make sure that you leave enough empty space like in the image above to attach your tilt sensor which will share a ground connection with the light sensor.
+### Step 9 - Attach tilt sensor and run shared ground for tilt/light sensors: 
+![Signal ran for tilt sensor and shared ground ran from tilt and light sensor](images/img21.jpg)
+
+Spread the legs of your tilt sensors out directly away from one another. Then, try to create loops in the legs of the tilt sensor so you have a place to attach your conductive thread. It does not matter which leg of the tilt sensor gets signal or is connected to ground, but the legs should not be touching one another. In this case we get the signal for the tilt sensor from the SCL pin and the shared ground from the ground pin directly next to the SCL pin. 
+
+When running the ground, make sure that you keep it spaced away from the signal line for the tilt sensor. The ground line should run to the other leg of the tilt sensor and then continue to connect to the - pin on the light sensor.
 ## Reviewing the Code
 ## Troubleshooting
 ## Conclusion
