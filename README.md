@@ -99,7 +99,7 @@ If you follow the construction guide step by step you won't have to worry about 
 Finally, gather all of your components and tools and select a hoodie OR shirt if you'd like to become your CHAOS Hoodie (or shirt).
 
 ## Construction Guide
-### Step 1 - Attach the FLORA and 1st NeoPixel:
+### Step 1 - Attach the FLORA and run power to the 1st NeoPixel:
 <p align="center">
     <img src="images/img1.jpg" width="49%">
     <img src="images/img5.jpg" width="49%">
@@ -110,6 +110,13 @@ To get our FLORA attached to the hoodie, begin by running the power from the VBA
 ![Neopixel arrow pointing](images/img12.jpg)
 
 ### Step 2 - Continue running the power to the rest of the NeoPixels:
+<p align="center">
+    <img src="images/img10.jpg" width="49%">
+    <img src="images/img11.jpg" width="49%">
+</p>
+
+Continue routing the same line of conductive thread, looping through the + pin on each NeoPixel. I find that the closer you keep your stitches, the easier it is to avoid potential short circuits, especially with how close the signal and ground lines will be to the power line.
+
 ### Step 3:
 ### Step 4:
 ### Step 5:
