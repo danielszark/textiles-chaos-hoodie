@@ -74,9 +74,12 @@ Below is a list of all the materials used in the construction of the project.
 Additional recommended materials not listed above include tape, glue, clear nail polish, a multimeter or alligator clips, which can be useful for reinforcing or testing conductive thread connections during or after construction.
 ## Prepare for Construction
 There is some important information you have to know before construction begins so you can avoid making critical mistakes. Shown below is a pinout diagram for the Adafruit FLORA:
+
 ![Adafruit FLORA Pinout](https://cdn-learn.adafruit.com/assets/assets/000/002/845/original/flora_pinout.png?1396787706)
 
-*Figure: Adafruit FLORA pinout diagram.*
+<p align="center">
+<em>Figure: Adafruit FLORA pinout diagram.</em>
+</p>
 
 Source: [Adafruit FLORA Pinout Diagram](https://learn.adafruit.com/getting-started-with-flora/flora-pinout-diagram)
 ## Construction Guide
