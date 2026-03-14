@@ -79,7 +79,7 @@ There is some important information you have to know before construction begins 
 
 <p align="center">
 <em>Figure: Adafruit FLORA pinout diagram.</em>
-Source: https://learn.adafruit.com/getting-started-with-flora/flora-pinout-diagram
+Source: <a href="https://learn.adafruit.com/getting-started-with-flora/flora-pinout-diagram">Adafruit FLORA Pinout Diagram</a>
 </p>
 
 ## Construction Guide
