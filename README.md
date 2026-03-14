@@ -13,11 +13,13 @@ The result is a wearable device that behaves completely differently every time i
 This project is great for makers, students learning about e-textiles and hobbyists whop have a general interest in e-textiles and wearable electronics. This project will also be particularly interesting to people who enjoy experimental design where the system produces emergent or unpredictable behavior rather than predictable outputs.
 
 This project is something you could take to a rave or show off to friends as it responds to both the environment through the light sensor and movement through the tilt sensor where actions like jumping or hopping will shift the ball bearing and influence the random seed. It is important to note that this is a **CHAOS** hoodie meaning the behavior is meant to be as random as possible without completely disregarding sensor input. As a result of this focus on chaos, the buzzer attached to the system plays completely random tones during each loop of the code, if you find this to be too annoying, alternatives for the buzzer behavior are discussed in the [Reviewing the Code](#reviewing-the-code) section.
+### Estimated time to complete
+Before you go any further, please keep in mind that the construction of this project could take you anywhere between **8 and 13 hours**. This number only takes into account the actual construction of the Chaos Hoodie and no other factors such as testing, writing code, or debugging incorrect behavior.
 ### Washability
 Because this project utilizes many electronic components, it **cannot be machine washed** during or after construction if not extra steps are taken to protect the components. Even if you decide to add extra protection like clear nail polish or some sort of adhesive or resin, I still highly reccomend you hand wash the hoodie because none of the components besides the battery can be removed. Hand washing the hoodie allows you to be extra careful not to get some of the more sensitive components like the buzzer wet, which would be damaged if gotten wet. 
 
 Once you are done handwashing give plenty of time for all the components to **fully dry** before powering up the system again.
-### Estimated Battery Life
+### Estimated battery life
 There are numerous ways to power the Chaos Hoodie as the Adafruit FLORA accepts a JST connection meaning you could use Adafruit's AA or AAA battery holders or a rechargeable LiPo battery. Battery life will depend on both the size of your battery, the brightness of all of the LEDs and how often the buzzer is activated.
 
 The NeoPixels will be the most power hungry componentsa in the system. A single NeoPixel can draw up to **60 mA at full brightness**, althrough in this project the LEDs will typically be running at lower brightness levels a majority of the time.
@@ -30,7 +32,7 @@ With **5 NeoPixels** including the FLORA's onboard NeoPixel, the estimated maxim
 
 Total: **420 mA**
 
-These 4 components have the most noticeable power draw but please keep in mind the total is a rough estimate of the high-end of the possible power draw. Keeping all of these values in mind we can assume that 1200mAh LiPo battery could run this system nonstop for approximately **2-3 hours**.
+These 4 components have the most noticeable power draw but please keep in mind the total is a rough estimate of the high-end of the possible power draw. Keeping all of these values in mind we can assume that a 1200mAh LiPo battery could run this system nonstop for approximately **2-3 hours**.
 ### Skills required
 This project assumes beginner to intermediate experience with sewing, basic electronics and Arduino programming.
 
@@ -71,6 +73,12 @@ Below is a list of all the materials used in the construction of the project.
 
 Additional recommended materials not listed above include tape, glue, clear nail polish, a multimeter or alligator clips, which can be useful for reinforcing or testing conductive thread connections during or after construction.
 ## Prepare for Construction
+There is some important information you have to know before construction begins so you can avoid making critical mistakes. Shown below is a pinout diagram for the Adafruit FLORA:
+![Adafruit FLORA Pinout](https://cdn-learn.adafruit.com/assets/assets/000/002/845/original/flora_pinout.png?1396787706)
+
+*Figure: Adafruit FLORA pinout diagram.*
+
+Source: [Adafruit FLORA Pinout Diagram](https://learn.adafruit.com/getting-started-with-flora/flora-pinout-diagram)
 ## Construction Guide
 ## Reviewing the Code
 ## Troubleshooting
