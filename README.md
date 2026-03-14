@@ -15,6 +15,25 @@ This project is great for makers, students learning about e-textiles and hobbyis
 This project is something you could take to a rave or show off to friends as it responds to both the environment through the light sensor and movement through the tilt sensor where actions like jumping or hopping will shift the ball bearing and influence the random seed. It is important to note that this is a **CHAOS** hoodie meaning the behavior is meant to be as random as possible without completely disregarding sensor input. As a result of this focus on chaos, the buzzer attached to the system plays completely random tones during each loop of the code, if you find this to be too annoying, alternatives for the buzzer behavior are discussed in the [Reviewing the Code](#reviewing-the-code) section.
 
 ### Skills required
+This project assumes beginner to intermediate experience with sewing, basic electronics and Arduino programming.
+
+Helpful skills include:
+- Basic Arduino programming.
+- Undertanding digital vs analog pins.
+- Basic sewing using both conductive and non-conductive thread.
+- Uploading code written in Arduino to a microcontroller compatible with Arduino.
+- Simple understanding of circuits.
+
+No advanced skills are required, but the more baseline knowledge you have, the smoother this project will go. Also, being familiar with coding in Arduino will make it for easier for you to make your own personal modifications to the code should you not like some aspects of the system's behavior. 
+### Tools required
+Below is a list of tools that will be used for this project:
+- Computer with the Arduino IDE installed.
+- Micro-USB cable that can plug into your computer to upload code to the FLORA.
+- Sewing needles.
+- Scissors or some other sharp object for cutting thread.
+- **Optional** - Tape or some sort of adhesive for initial attachment of components to the garment.
+- **Optional** - Multimeter for testing conductive thread connections.
+- **Optional** - Alligator clips for testing components.
 ## Materials
 Below is a list of all the materials used in the construction of the project.
 
@@ -34,7 +53,6 @@ Below is a list of all the materials used in the construction of the project.
 **Estimated Total Cost:** $53.60 – $75.60
 
 Additional recommended materials not listed above include tape, glue, or clear nail polish, which can be useful for reinforcing conductive thread connections during construction.
-## Tools
 ## Prepare for Construction
 ## Construction Guide
 ## Reviewing the Code
