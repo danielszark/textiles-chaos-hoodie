@@ -151,6 +151,15 @@ The signal for the light sensor will come from pin #10 on the FLORA while the po
 Spread the legs of your tilt sensors out directly away from one another. Then, try to create loops in the legs of the tilt sensor so you have a place to attach your conductive thread. It does not matter which leg of the tilt sensor gets signal or is connected to ground, but the legs should not be touching one another. In this case we get the signal for the tilt sensor from the SCL pin and the shared ground from the ground pin directly next to the SCL pin. 
 
 When running the ground, make sure that you keep it spaced away from the signal line for the tilt sensor. The ground line should run to the other leg of the tilt sensor and then continue to connect to the - pin on the light sensor.
+### Step 10 - Run the ground line for the Lilypad sewable LEDs:
+<p align="center">
+    <img src="images/img23.jpg" width="49%">
+    <img src="images/img24.jpg" width="49%">
+</p>
+<p align="center">
+    <img src="images/img25.jpg" width="49%">
+    <img src="images/img26.jpg" width="49%">
+</p>
 ## Reviewing the Code
 ## Troubleshooting
 ## Conclusion
