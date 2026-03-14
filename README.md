@@ -99,7 +99,11 @@ If you follow the construction guide step by step you won't have to worry about 
 Finally, gather all of your components and tools and select a hoodie OR shirt if you'd like to become your CHAOS Hoodie (or shirt).
 
 ## Construction Guide
-### Step 1 - Attach the FLORA and run power to the 1st NeoPixel:
+### Step 1 - Organize components on the hoodie and be aware of final component placement:
+![Final layout of Chaos Hoodie components](images/img30.jpg)
+
+Shown here is the final layout of all of the components. Im showing you this first so you're aware of the complete layout in case you find any of the below steps confusing. You'll begin by placing the FLORA in the upper right quadrant of the front of the hoodie.
+### Step 2 - Attach the FLORA and run power to the 1st NeoPixel:
 <p align="center">
     <img src="images/img1.jpg" width="49%">
     <img src="images/img5.jpg" width="49%">
@@ -109,7 +113,7 @@ To get our FLORA attached to the hoodie, begin by running the power from the VBA
 
 ![Neopixel arrow pointing](images/img12.jpg)
 
-### Step 2 - Continue running the power to the rest of the NeoPixels:
+### Step 3 - Continue running the power to the rest of the NeoPixels:
 <p align="center">
     <img src="images/img10.jpg" width="49%">
     <img src="images/img11.jpg" width="49%">
@@ -117,12 +121,21 @@ To get our FLORA attached to the hoodie, begin by running the power from the VBA
 
 Continue routing the same line of conductive thread, looping through the + pin on each NeoPixel. I find that the closer you keep your stitches, the easier it is to avoid potential short circuits, especially with how close the signal and ground lines will be to the power line.
 
-### Step 3:
-### Step 4:
-### Step 5:
-### Step 6:
+### Step 4 - Run the signal from the #12 pin to the first NeoPixel:
+![Signal line ran from #12 pin to the first NeoPixel](images/img13.jpg)
+
+Now get your signal connection ran to the first NeoPixel, the signal is not a continous run and instead is jumpered between every NeoPixel. Remember, the signal pin should have an arrow pointing **towards** the next NeoPixel. Once we get the first signal line in, we'll pivot to get our entire ground line ran first.
+### Step 5 - Run the ground line for the NeoPixels:
+![Ground line ran for the NeoPixels](images/img15.jpg)
+
+Running the ground is pretty much the exact same process as running the power, make sure that the ground for the NeoPixels is coming from the ground pin directly next to pin #6 on the FLORA. Run the ground making sure to loop through the - pin for each NeoPixel before tying it off on the last NeoPixel and cutting any loose thread short.
+### Step 6 - Run the rest of the signal jumpers for the NeoPixels:
+![All three lines complete for the NeoPixels](images/img16.jpg)
+
+This process is a little different as instead you will be making three shorter runs for the signal jumpers between all 4 NeoPixels.
 ### Step 7:
 ### Step 8:
+### Step 9:
 ## Reviewing the Code
 ## Troubleshooting
 ## Conclusion
