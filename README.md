@@ -1,4 +1,21 @@
 # Chaos Hoodie
+## Table of Contents
+
+- [Introduction](#introduction)
+  - [What is this project?](#what-is-this-project)
+  - [Who is this project for?](#who-is-this-project-for)
+  - [Estimated time to complete](#estimated-time-to-complete)
+  - [Washability](#washability)
+  - [Estimated battery life](#estimated-battery-life)
+  - [Skills required](#skills-required)
+  - [Tools required](#tools-required)
+- [Materials](#materials)
+- [Prepare for Construction](#prepare-for-construction)
+- [Construction Guide](#construction-guide)
+- [Reviewing the Code](#reviewing-the-code)
+- [Troubleshooting](#troubleshooting)
+- [Conclusion](#conclusion)
+
 ## Introduction
 ### What is this project?
 Hello and welcome to my tutorial for making the Chaos Hoodie! 
@@ -16,7 +33,7 @@ This project is something you could take to a rave or show off to friends as it 
 ### Estimated time to complete
 Before you go any further, please keep in mind that the construction of this project could take you anywhere between **8 and 13 hours**. This number only takes into account the actual construction of the Chaos Hoodie and no other factors such as testing, writing code, or debugging incorrect behavior.
 ### Washability
-Because this project utilizes many electronic components, it **cannot be machine washed** during or after construction if not extra steps are taken to protect the components. Even if you decide to add extra protection like clear nail polish or some sort of adhesive or resin, I still highly reccomend you hand wash the hoodie because none of the components besides the battery can be removed. Hand washing the hoodie allows you to be extra careful not to get some of the more sensitive components like the buzzer wet, which would be damaged if gotten wet. 
+Because this project utilizes many electronic components, it **cannot be machine washed** during or after construction if not extra steps are taken to protect the components. Even if you decide to add extra protection like clear nail polish or some sort of adhesive or resin, I still highly recommend you hand wash the hoodie because none of the components besides the battery can be removed. Hand washing the hoodie allows you to be extra careful not to get some of the more sensitive components like the buzzer wet, which would be damaged if gotten wet. 
 
 Once you are done handwashing give plenty of time for all the components to **fully dry** before powering up the system again.
 ### Estimated battery life
@@ -38,7 +55,7 @@ This project assumes beginner to intermediate experience with sewing, basic elec
 
 Helpful skills include:
 - Basic Arduino programming.
-- Undertanding digital vs analog pins.
+- Understanding digital vs analog pins.
 - Basic sewing using both conductive and non-conductive thread.
 - Uploading code written in Arduino to a microcontroller compatible with Arduino.
 - Simple understanding of circuits.
@@ -139,12 +156,12 @@ This process is a little different as instead you will be making three shorter r
     <img src="images/img18.jpg" width="49%">
 </p>
 
-Next you will want to attach the buzzer to the hoodie. The buzzer should be oriented in a way that the ground is facing left and the signal or positive side if facing right. You should get your ground line from the ground pin directly next to the battery plug in on the board. Your power or signal should come from the TX pin which is directly next to the ground pin. Sow your lines for the buzzer being usre not to cross them in order avoid short circuits.
+Next you will want to attach the buzzer to the hoodie. The buzzer should be oriented in a way that the ground is facing left and the signal or positive side if facing right. You should get your ground line from the ground pin directly next to the battery plug in on the board. Your power or signal should come from the TX pin which is directly next to the ground pin. Sew your lines for the buzzer being sure not to cross them in order avoid short circuits.
 
 ### Step 8 - Run signal and power for the light sensor:
 ![Signal and power ran for the light sensor](images/img19.jpg)
 
-The signal for the light sensor will come from pin #10 on the FLORA while the power will come from the 3.3V pin situated between the SDA and RX pins. When you are sowing these connections in, make sure that you leave enough empty space like in the image above to attach your tilt sensor which will share a ground connection with the light sensor.
+The signal for the light sensor will come from pin #10 on the FLORA while the power will come from the 3.3V pin situated between the SDA and RX pins. When you are sewing these connections in, make sure that you leave enough empty space like in the image above to attach your tilt sensor which will share a ground connection with the light sensor.
 ### Step 9 - Attach tilt sensor and run shared ground for tilt/light sensors: 
 ![Signal ran for tilt sensor and shared ground ran from tilt and light sensor](images/img21.jpg)
 
@@ -175,11 +192,9 @@ The process for running the ground is largely similar to that of the NeoPixels. 
 Finally, run the power for the sewable LEDs which will come from pin #9. Make sure not to cross the power line over or under the ground line to avoid creating short circuits. Once the power is run for the sewable LEDs, the construction phase of the project is complete!
 ## Reviewing the Code
 
-You can download the full program here:
+You can download the full program here or you can just copy it from below: [Chaos Hoodie code](SzarkowiczDaniel-Chaos-Code/SzarkowiczDaniel-Chaos-Code.ino)
 
-[Chaos Hoodie code](SzarkowiczDaniel-Chaos-Code/SzarkowiczDaniel-Chaos-Code.ino)
-
-Below is the full program used in the Chaos Hoodie.
+Below is the full program used in the Chaos Hoodie:
 
 ```cpp
 #include <Adafruit_NeoPixel.h>
@@ -323,6 +338,9 @@ void loop() {
 
 ```
 
+Above is the code used in this project. All actuators use some combination of the `random()` function and a chaos value derived from the light sensor readings using `map()` and `constrain()` functions. While the visual display is mostly unintrusive while the hoodie is being worn, you may find the buzzer to be too distracting for long-term use. The buzzer can be disabled by commenting out the last block of code consisting of `tone()`, `delay()` and `noTone()` calls. If you have not used a buzzer like this one before, you can follow [this guide](https://learn.sparkfun.com/tutorials/lilypad-buzzer-hookup-guide/all#triggering-sounds) for a basic overview of its functionality. You could modify the code to have the buzzer play a song or a more structured, less random sequence of sounds.
+
+
 ## Troubleshooting
 If you find that components are not working or the Chaos Hoodie as a whole is not behaving as expected, here are some common possible issues and their solutions.
 
@@ -355,3 +373,16 @@ If you find that components are not working or the Chaos Hoodie as a whole is no
 - If you believe component failure has occured, double check using a multi-meter.
 
 ## Conclusion
+
+The Chaos Hoodie demonstrates how wearable electronics can be used to create experimental yet still interactive designs. By combining sensors, LEDs and a buzzer with random number generation the system produces a constantly evolving pattern of light and sound that respond to both light and user movement in its own way. This project highlights an alternative approach one could take when it comes to designing an **e-textiles** project, foregoing the typical design where sensor readings are directly mapped to actuator output. This project could be easily expanded or remade using different sensors and actuators to make use of the `random()` function in different ways.
+
+Some useful references I utilized while developing this project include:
+
+- Adafruit FLORA Guide: https://learn.adafruit.com/getting-started-with-flora
+- Adafruit NeoPixel Uberguide: https://learn.adafruit.com/adafruit-neopixel-uberguide
+
+Some somewhat similar works that you may find useful in building off this project or developing your own from scratch:
+
+- Sparkle Skirt Using Adafruit Flora: https://makezine.com/projects/sparkle-skirt-using-adafruit-flora/ 
+- Flora GPS Jacket: https://learn.adafruit.com/flora-gps-jacket/overview
+- Colour Sensing Jewellery, a NeoPixel Wearable: https://www.instructables.com/NeoPixel-Jewellery-a-Colour-Sensing-Fabulous-Weara/ 
