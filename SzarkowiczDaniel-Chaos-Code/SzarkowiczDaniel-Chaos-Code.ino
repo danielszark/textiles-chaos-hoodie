@@ -18,6 +18,8 @@ int lightMin = 1023;
 int lightMax = 0;
 bool tilted = false;
 
+// Initialize the NeoPixels, both the external and the one onboard the FLORA.
+
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(
   PIXELS_COUNT,
   PIXELS_PIN,
@@ -59,7 +61,7 @@ void setup() {
   pinMode(BUZZER_PIN, OUTPUT);
   pinMode(TILT_PIN, INPUT_PULLUP);
 
-  // Initialize the NeoPixels
+  // Initialize the NeoPixels, both external and onboard.
   strip.begin();
   strip.setBrightness(50);
   strip.show();
@@ -72,7 +74,7 @@ void setup() {
 }
 
 void loop() {
-  // Code using random() to power actuators.
+  // Light and tilt sensor readings primarily used for testings
   int light = analogRead(LIGHT_PIN);
   int tilt = digitalRead(TILT_PIN);
 
@@ -80,33 +82,34 @@ void loop() {
   int chaos = map(light, lightMin, lightMax, 1, 10);
   chaos = constrain(chaos, 1, 10);
 
+  // This will log our light and tilt sensor readings, very useful for debugging light and tilt sensor functionality.
   Serial.print(light);
   Serial.print(" ");
   Serial.println(tilt);
   
+  // For total randomness we generate a new randomseed every loop iteration.
   setRandomSeed();
   // Set random brightness, bare minimum is that it's still pretty visible.
   int brightness = random(40, 40 + chaos * 20);
   strip.setBrightness(brightness);
+
   // Gives a slight fading effect to onboard and external NeoPixels. More noticeable when delays are shorter which equals a darker environment.
   for (int i = 0; i < PIXELS_COUNT; i++) {
     uint32_t c = strip.getPixelColor(i);
-
     int r = (c >> 16) & 255;
     int g = (c >> 8) & 255;
     int b = c & 255;
-
     strip.setPixelColor(i, strip.Color(r * 0.8, g * 0.8, b * 0.8));
   }
   
+  // Same as code above but only for the FLORA's onboard NeoPixel
   uint32_t oc = onboardPixel.getPixelColor(0);
-
   int orr = (oc >> 16) & 255;
   int og = (oc >> 8) & 255;
   int ob = oc & 255;
-
   onboardPixel.setPixelColor(0, onboardPixel.Color(orr * 0.8, og * 0.8, ob * 0.8));
 
+  // Assign random values to random NeoPixels, the onboard NeoPixel is always assigned a random value.
   int pixelIndex = random(PIXELS_COUNT);
   int r = random(256);
   int g = random(256);
